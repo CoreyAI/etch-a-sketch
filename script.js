@@ -22,7 +22,7 @@ function hoverGrid() {
 
 function changeColor(e) {
     const square = document.getElementById(this.id);
-    square.style.backgroundColor = "black";
+    square.className = "squareHover";
 }
 
 createGrid();

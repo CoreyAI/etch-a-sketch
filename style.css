@@ -8,3 +8,7 @@
 .square {
     border: 2px solid black;
 }
+
+.squareHover {
+    background-color: black;
+}
