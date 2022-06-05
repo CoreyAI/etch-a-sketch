@@ -1,7 +1,12 @@
+:root {
+    --grid-columns: 16;
+    --grid-rows: 16;
+}
+
 .container {
     display: grid;
-    grid-template-columns: repeat(16, 25px);
-    grid-template-rows: repeat(16, 25px);
+    grid-template-columns: repeat(var(--grid-columns), 25px);
+    grid-template-rows: repeat(var(--grid-rows), 25px);
     gap: 2px;
 }
 
@@ -11,4 +16,8 @@
 
 .squareHover {
     background-color: black;
+}
+
+.grid-button {
+    margin-bottom: 10px;
 }
