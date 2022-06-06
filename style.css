@@ -1,23 +1,31 @@
 :root {
     --grid-columns: 16;
     --grid-rows: 16;
+    --grid-length: 90vmin;
+    --grid-width: 90vmin;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(var(--grid-columns), 25px);
-    grid-template-rows: repeat(var(--grid-rows), 25px);
-    gap: 2px;
+    grid-template-columns: repeat(var(--grid-columns), calc(var(--grid-length) / var(--grid-columns)));
+    grid-template-rows: repeat(var(--grid-rows), calc(var(--grid-width) / var(--grid-rows)));
+    justify-content: center;
 }
 
 .square {
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .squareHover {
     background-color: black;
 }
 
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
 .grid-button {
     margin-bottom: 10px;
+    font-size: 18px;    
 }
