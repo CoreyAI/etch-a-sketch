@@ -1,3 +1,4 @@
+/* Constant variables used to dynamically modify the grid based on user input. */
 :root {
     --grid-columns: 16;
     --grid-rows: 16;
@@ -5,6 +6,7 @@
     --grid-width: 90vmin;
 }
 
+/* Grid container used to properly size the cells to dynamically fit on webpage. */
 .container {
     display: grid;
     grid-template-columns: repeat(var(--grid-columns), calc(var(--grid-length) / var(--grid-columns)));
@@ -12,19 +14,23 @@
     justify-content: center;
 }
 
+/* Grid cell properties before hover. */
 .square {
     border: 1px solid black;
 }
 
+/* Grid cell properties after hover. */
 .squareHover {
     background-color: black;
 }
 
+/* Container for button for proper webpage formatting. */
 .button-row {
     display: flex;
     justify-content: center;
 }
 
+/* Grid modification button styling. */
 .grid-button {
     margin-bottom: 10px;
     font-size: 18px;    
